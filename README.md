@@ -7,7 +7,7 @@ This module is a restful interface which has 2 methods:
 
 1) POST
 	POST uploads the metric data into the database asynchronously by spawning of a new thread and returns the id of the tuple being inserted into the database. 
-	URL: http://localhost:8080/SrividyaEbayInterview/interview/metric
+	URL:  http://localhost:8080/SrividyaEbayInterview/interview/metric
 	Payload:
 		{
 			"cpu": {
