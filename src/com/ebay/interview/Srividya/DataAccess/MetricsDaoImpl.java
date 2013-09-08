@@ -6,7 +6,6 @@ import com.mysql.jdbc.Driver;
 
 public class MetricsDaoImpl implements MetricsDao {
 
-	String temp = "{\"cpu\":{\"core1\":\"80%\",\"core2\":\"60%\"}}";
 	Connection con;
 	Statement stmt;
 	ResultSet rs;
@@ -19,15 +18,6 @@ public class MetricsDaoImpl implements MetricsDao {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
-
-	public static void main(String[] args) {
-		MetricsDaoImpl mdi = new MetricsDaoImpl();
-		Calendar cal = Calendar.getInstance();
-		Timestamp timestamp = new Timestamp(cal.getTimeInMillis());
-		// mdi.storeMetrics("21", "abc", timestamp);
-		// mdi.getMetricsById("21");
-		System.out.print(mdi.getMetricsById("21"));
 	}
 
 	public boolean storeMetrics(String id, String metrics, Timestamp timestamp) {
