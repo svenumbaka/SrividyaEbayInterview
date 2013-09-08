@@ -7,7 +7,7 @@ This module is a restful interface which has 2 methods:
 
 1) POST
 	POST uploads the metric data into the database asynchronously by spawning of a new thread and returns the id of the tuple being inserted into the database. 
-	URL: http://localhost:8080/SrividyaEbayInterview/interview/metric
+	URL:  http://localhost:8080/SrividyaEbayInterview/interview/metric
 	Payload:
 		{
 			"cpu": {
@@ -34,10 +34,10 @@ Database SQL script:
 Only one script to create a database table has been used in the project. Database used is mysql
 	
 	CREATE SCHEMA `ebay` ;
-	create table interview(db_id varchar(20), db_metrics varchar(200), db_timestamp timestamp) ;
+	create table interview(db_id varchar(20), db_metrics varchar(200), db_timestamp varchar(200)) ;
 
 Instructions:
 1) Please create the schema and the table from the above 2 sql statements in a mysql instance.
-2) Please deploy the war of the project in a tom cat working directory and start the server.
+2) Please deploy the war (present in the target folder in the repository above)of the project in a tom cat working directory and start the server.
 3) Please make a post call as shown above and this would return an identifier, please save this identifier
 4) Make a get call using the identifier from step 3
