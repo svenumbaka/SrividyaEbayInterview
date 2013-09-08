@@ -38,6 +38,6 @@ Only one script to create a database table has been used in the project. Databas
 
 Instructions:
 1) Please create the schema and the table from the above 2 sql statements in a mysql instance.
-2) Please deploy the war of the project in a tom cat working directory and start the server.
+2) Please deploy the war (present in the target folder in the repository above)of the project in a tom cat working directory and start the server.
 3) Please make a post call as shown above and this would return an identifier, please save this identifier
 4) Make a get call using the identifier from step 3
