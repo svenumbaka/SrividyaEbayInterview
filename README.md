@@ -34,7 +34,7 @@ Database SQL script:
 Only one script to create a database table has been used in the project. Database used is mysql
 	
 	CREATE SCHEMA `ebay` ;
-	create table interview(db_id varchar(20), db_metrics varchar(200), db_timestamp timestamp) ;
+	create table interview(db_id varchar(20), db_metrics varchar(200), db_timestamp varchar(200)) ;
 
 Instructions:
 1) Please create the schema and the table from the above 2 sql statements in a mysql instance.
